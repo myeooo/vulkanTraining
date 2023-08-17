@@ -18,10 +18,12 @@ private:
 		VkPhysicalDevice physicalDevicde;
 		VkDevice logicalDevice;
 	}mainDevice;
+	VkQueue graphicsQueue;
 	VkInstance instance;
 	VkAllocationCallbacks* g_Allocator = nullptr;
 	GLFWwindow* window;
 	// create function
+	void createLogicalDevice();
 	void createInstanse();
 	// get function
 	void getPhysicalDevice();
